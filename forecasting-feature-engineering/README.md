@@ -47,4 +47,4 @@ Update `DATA_PATH` and `OUTPUT_PATH` before running locally.
 
 Shivang Sharma  
 MS Data Science Candidate, Purdue University  
-MIT Applied Data Science Program Graduate
+MIT PE Applied Data Science Program Graduate
