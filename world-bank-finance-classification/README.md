@@ -102,4 +102,4 @@ python src/evaluation.py
 
 Shivang Sharma  
 MS Data Science Candidate, Purdue University  
-MIT Applied Data Science Program Graduate
+MIT PE Applied Data Science Program Graduate
