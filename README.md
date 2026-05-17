@@ -13,8 +13,6 @@ This repository is being organized to demonstrate end-to-end data science practi
 | [FoodHub Order Analysis](foodhub-data-analysis/) | In progress | Online food delivery demand, revenue, delivery time, and customer experience analysis | EDA, grouped aggregation, business rules, visualization, recommendations |
 | [Email Click Prediction](email-click-prediction/) | In progress | Marketing engagement and click-through prediction | TF-IDF, user/campaign features, XGBoost |
 | [Forecasting & Feature Engineering](forecasting-feature-engineering/) | In progress | Product-level demand forecasting and reusable ML features | Prophet, XGBoost regression, lag features, target encoding |
-| [Student Learning Capacity Analysis](student-learning-capacity-analysis/) | Planned | Educational outcome modeling | PCA, decision trees, multinomial logistic regression |
-| [Facial Emotion Detection](facial-emotion-detection/) | Planned | Image classification | CNNs, transfer learning, data augmentation |
 
 ## Technical Stack
 
