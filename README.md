@@ -12,19 +12,19 @@ The goal of this portfolio is to show practical machine learning work that conne
 - Model evaluation using metrics such as ROC-AUC, F1, precision, recall, and validation workflows
 - Business-focused analytics for marketplace, operations, finance/risk, and marketing use cases
 
-## Projects and Files
+## Current Clean Files
 
 | Area | Files | What it demonstrates |
 |---|---|---|
 | Loan default prediction | `Loan_Default_Prediction.ipynb` | Credit-risk style classification, feature preparation, supervised learning, and model evaluation |
-| Click-through / engagement prediction | `CTR code_v2.ipynb` | Marketing analytics, classification modeling, text/behavioral features, and click prediction workflows |
-| Forecasting | `prophet_submit.py`, `xgb_submit.py`, `DataPrep_xgb_submit.py` | Time-series feature preparation, Prophet forecasting, XGBoost regression, lag features, promo/weather joins, and product-level demand prediction |
-| Feature engineering utilities | `WNS.py` | Interaction features, one-hot interactions, K-fold target encoding, grouped statistical encodings, and reusable ML preprocessing logic |
-| Applied data science notebooks | `FDS_Project.ipynb` | Exploratory analysis, applied modeling, and business-oriented data science communication |
+| Click-through / engagement prediction | `email_click_prediction_clean.py` | Marketing analytics, NLP/text preprocessing, TF-IDF features, user/campaign behavior features, XGBoost classification, and ROC-AUC evaluation |
+| Forecasting and demand prediction | `data_prep_and_prophet.py`, `xgb_sales_forecast.py` | Sales/weather/promo joins, lag features, Prophet forecasting, XGBoost regression, and product-level demand prediction |
+| Feature engineering utilities | `feature_engineering.py` | Interaction features, one-hot interactions, K-fold target encoding, grouped statistical encodings, CatBoost classification, and reusable ML preprocessing logic |
+| Applied data science notebook | `FDS_Project.ipynb` | Exploratory analysis, applied modeling, and business-oriented data science communication |
 
 ## Technical Stack
 
-Python, pandas, NumPy, scikit-learn, XGBoost, Prophet, feature engineering, target encoding, lag features, model validation, classification, regression, forecasting, Jupyter Notebook, and SQL-oriented analytics workflows.
+Python, pandas, NumPy, scikit-learn, XGBoost, CatBoost, Prophet, TF-IDF, feature engineering, target encoding, lag features, model validation, classification, regression, forecasting, Jupyter Notebook, and SQL-oriented analytics workflows.
 
 ## Example Modeling Workflows
 
@@ -34,11 +34,15 @@ The forecasting workflow combines calendar mappings, historical sales, weather d
 
 ### Feature Engineering
 
-The feature engineering utilities include reusable functions for one-hot interactions, numerical pairwise interactions, K-fold mean/median/quantile encoding, and grouped target encoding. These are useful for tabular machine learning problems where signal comes from interactions, categorical effects, and historical behavior.
+The feature engineering utilities include reusable functions for one-hot interactions, numerical pairwise interactions, K-fold mean/median/quantile encoding, grouped target encoding, and CatBoost model evaluation. These are useful for tabular machine learning problems where signal comes from interactions, categorical effects, and historical behavior.
+
+### Click Prediction and Marketing Analytics
+
+The click prediction workflow includes HTML/text cleaning, subject-line features, email-body features, TF-IDF vectorization, user-level behavior features, communication-type patterns, time features, out-of-fold model predictions, and XGBoost classification.
 
 ### Classification and Risk-Style Modeling
 
-The loan default and CTR/click prediction projects demonstrate supervised classification workflows that are relevant to credit risk, marketing analytics, product analytics, and decision science use cases.
+The loan default and click prediction projects demonstrate supervised classification workflows relevant to credit risk, marketing analytics, product analytics, and decision science use cases.
 
 ## Professional Positioning
 
