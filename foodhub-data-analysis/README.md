@@ -2,7 +2,7 @@
 
 ## Project Context
 
-This project was completed as part of the MIT Professional Education Applied Data Science Program. It analyzes online food delivery orders for FoodHub, a food aggregator platform that connects customers, restaurants, and delivery partners through a mobile app.
+This project was completed as part of the MIT PE Applied Data Science Program. It analyzes online food delivery orders for FoodHub, a food aggregator platform that connects customers, restaurants, and delivery partners through a mobile app.
 
 The business objective is to understand order demand, cuisine preferences, customer behavior, delivery performance, restaurant revenue, and rating patterns so FoodHub can improve customer experience and support better operational decisions.
 
@@ -107,4 +107,4 @@ The raw dataset is not included in this repository. Place `foodhub_order.csv` in
 
 Shivang Sharma  
 MS Data Science Candidate, Purdue University  
-MIT Applied Data Science Program Graduate
+MIT PE Applied Data Science Program Graduate
