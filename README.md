@@ -1,54 +1,56 @@
 # Applied Machine Learning Portfolio
 
-This repository contains applied data science and machine learning projects focused on forecasting, classification, click-through prediction, loan default modeling, feature engineering, and model evaluation in Python.
+A structured data science and machine learning portfolio focused on forecasting, classification, feature engineering, model evaluation, and business decision support.
 
-The goal of this portfolio is to show practical machine learning work that connects technical modeling choices to business problems such as demand forecasting, marketing engagement, credit-risk style classification, operational planning, and analytics-driven decision support.
+This repository is being organized to demonstrate end-to-end machine learning practice: problem framing, reproducible preprocessing, model training, evaluation, documentation, and business interpretation.
 
-## Portfolio Focus
+## Portfolio Projects
 
-- Supervised machine learning for classification and regression
-- Forecasting and time-series modeling
-- Feature engineering for tabular and text data
-- Model evaluation using metrics such as ROC-AUC, F1, precision, recall, and validation workflows
-- Business-focused analytics for marketplace, operations, finance/risk, and marketing use cases
-
-## Current Clean Files
-
-| Area | Files | What it demonstrates |
-|---|---|---|
-| Loan default prediction | `loan_default_prediction_clean.py` | Credit-risk style classification, preprocessing pipelines, supervised learning, model comparison, and ROC-AUC evaluation |
-| Click-through / engagement prediction | `email_click_prediction_clean.py` | Marketing analytics, NLP/text preprocessing, TF-IDF features, user/campaign behavior features, XGBoost classification, and ROC-AUC evaluation |
-| Forecasting and demand prediction | `data_prep_and_prophet.py`, `xgb_sales_forecast.py` | Sales/weather/promo joins, lag features, Prophet forecasting, XGBoost regression, and product-level demand prediction |
-| Feature engineering utilities | `feature_engineering.py` | Interaction features, one-hot interactions, K-fold target encoding, grouped statistical encodings, CatBoost classification, and reusable ML preprocessing logic |
-| Applied data science notebook | `FDS_Project.ipynb` | Exploratory analysis, applied modeling, and business-oriented data science communication |
+| Project | Status | Focus | Key Methods |
+|---|---|---|---|
+| [World Bank Finance Classification](world-bank-finance-classification/) | In progress | Predicting above-median access-to-finance constraints | Logistic Regression, Random Forest, ROC-AUC, cross-validation |
+| [Loan Default Prediction](loan-default-prediction/) | In progress | Credit-risk style binary classification | Preprocessing pipelines, Logistic Regression, Random Forest, Gradient Boosting |
+| [Email Click Prediction](email-click-prediction/) | In progress | Marketing engagement and click-through prediction | TF-IDF, user/campaign features, XGBoost |
+| [Forecasting & Feature Engineering](forecasting-feature-engineering/) | In progress | Product-level demand forecasting and reusable ML features | Prophet, XGBoost regression, lag features, target encoding |
+| [Student Learning Capacity Analysis](student-learning-capacity-analysis/) | Planned | Educational outcome modeling | PCA, decision trees, multinomial logistic regression |
+| [Facial Emotion Detection](facial-emotion-detection/) | Planned | Image classification | CNNs, transfer learning, data augmentation |
 
 ## Technical Stack
 
-Python, pandas, NumPy, scikit-learn, XGBoost, CatBoost, Prophet, TF-IDF, feature engineering, target encoding, lag features, model validation, classification, regression, forecasting, Jupyter Notebook, and SQL-oriented analytics workflows.
+Python, pandas, NumPy, scikit-learn, XGBoost, CatBoost, Prophet, TF-IDF, feature engineering, target encoding, lag features, cross-validation, ROC-AUC, F1, precision/recall, Jupyter Notebook, SQL-oriented analytics workflows.
 
-## Example Modeling Workflows
+## Repository Standards
 
-### Forecasting and Demand Prediction
+Each project is being structured with:
 
-The forecasting workflow combines calendar mappings, historical sales, weather data, promotion data, lagged sales features, and product-level modeling. The repository includes Prophet-based forecasting and XGBoost regression scripts for product-level demand prediction.
+- Clear problem statement and business context
+- Reproducible setup instructions
+- Modular source code under `src/`
+- Configuration-driven paths and model parameters
+- Evaluation metrics saved in `results/metrics/`
+- Visualizations saved in `results/figures/`
+- Basic tests under `tests/`
+- Documentation explaining methodology, results, and interpretation
 
-### Feature Engineering
+## Current Clean Scripts
 
-The feature engineering utilities include reusable functions for one-hot interactions, numerical pairwise interactions, K-fold mean/median/quantile encoding, grouped target encoding, and CatBoost model evaluation. These are useful for tabular machine learning problems where signal comes from interactions, categorical effects, and historical behavior.
+The original top-level scripts are being reorganized into project folders. Cleaned scripts currently include:
 
-### Click Prediction and Marketing Analytics
-
-The click prediction workflow includes HTML/text cleaning, subject-line features, email-body features, TF-IDF vectorization, user-level behavior features, communication-type patterns, time features, out-of-fold model predictions, and XGBoost classification.
-
-### Classification and Risk-Style Modeling
-
-The loan default and click prediction projects demonstrate supervised classification workflows relevant to credit risk, marketing analytics, product analytics, and decision science use cases.
+- `email_click_prediction_clean.py`
+- `feature_engineering.py`
+- `data_prep_and_prophet.py`
+- `xgb_sales_forecast.py`
+- `loan_default_prediction_clean.py`
 
 ## Professional Positioning
 
 This portfolio supports my broader work in data science and analytics, including forecasting, predictive modeling, marketplace analytics, risk analytics, and business intelligence. My professional experience includes building SQL pipelines, Python analytics workflows, operational dashboards, forecasting models, and decision-support tools across marketplace operations, supply chain, logistics, and financial/portfolio analytics environments.
 
 ## Contact
+
+**Shivang Sharma**  
+MS Data Science Candidate, Purdue University  
+MIT Applied Data Science Program Graduate
 
 - LinkedIn: https://www.linkedin.com/in/shivangsharma23/
 - GitHub: https://github.com/shivangsharma-repository
