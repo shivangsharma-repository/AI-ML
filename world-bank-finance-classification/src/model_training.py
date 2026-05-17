@@ -8,13 +8,19 @@ Author: Shivang Sharma
 
 from pathlib import Path
 import json
-from typing import Dict, Tuple
+from typing import Dict, Optional, Tuple
 
 import pandas as pd
 import yaml
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
+from sklearn.metrics import (
+    accuracy_score,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -22,7 +28,7 @@ BINARY_TARGET = "high_finance_constraint"
 DROP_COLUMNS = ["country", "country_code", "year", "fin16", BINARY_TARGET]
 
 
-def load_config(config_path: Path | None = None) -> dict:
+def load_config(config_path: Optional[Path] = None) -> dict:
     """Load project configuration."""
     if config_path is None:
         config_path = Path(__file__).resolve().parents[1] / "config.yaml"
