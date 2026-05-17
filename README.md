@@ -16,7 +16,7 @@ The goal of this portfolio is to show practical machine learning work that conne
 
 | Area | Files | What it demonstrates |
 |---|---|---|
-| Loan default prediction | `Loan_Default_Prediction.ipynb` | Credit-risk style classification, feature preparation, supervised learning, and model evaluation |
+| Loan default prediction | `loan_default_prediction_clean.py` | Credit-risk style classification, preprocessing pipelines, supervised learning, model comparison, and ROC-AUC evaluation |
 | Click-through / engagement prediction | `email_click_prediction_clean.py` | Marketing analytics, NLP/text preprocessing, TF-IDF features, user/campaign behavior features, XGBoost classification, and ROC-AUC evaluation |
 | Forecasting and demand prediction | `data_prep_and_prophet.py`, `xgb_sales_forecast.py` | Sales/weather/promo joins, lag features, Prophet forecasting, XGBoost regression, and product-level demand prediction |
 | Feature engineering utilities | `feature_engineering.py` | Interaction features, one-hot interactions, K-fold target encoding, grouped statistical encodings, CatBoost classification, and reusable ML preprocessing logic |
