@@ -50,7 +50,7 @@ This portfolio supports my broader work in data science and analytics, including
 
 **Shivang Sharma**  
 MS Data Science Candidate, Purdue University  
-MIT Applied Data Science Program Graduate
+MIT PE Applied Data Science Program Graduate
 
 - LinkedIn: https://www.linkedin.com/in/shivangsharma23/
 - GitHub: https://github.com/shivangsharma-repository
