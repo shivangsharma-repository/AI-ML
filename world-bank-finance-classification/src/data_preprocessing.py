@@ -9,7 +9,7 @@ Author: Shivang Sharma
 """
 
 from pathlib import Path
-from typing import Tuple
+from typing import List, Optional, Tuple, Union
 
 import pandas as pd
 import yaml
@@ -20,12 +20,12 @@ BINARY_TARGET = "high_finance_constraint"
 METADATA_COLUMNS = ["country", "country_code", "year", TARGET_COLUMN, BINARY_TARGET]
 
 
-def load_config(config_path: Path | None = None) -> dict:
+def load_config(config_path: Optional[Path] = None) -> dict:
     """Load project configuration.
 
     Parameters
     ----------
-    config_path : Path | None
+    config_path : Optional[Path]
         Optional path to config.yaml. If omitted, the project-level config is used.
 
     Returns
@@ -39,7 +39,7 @@ def load_config(config_path: Path | None = None) -> dict:
         return yaml.safe_load(file)
 
 
-def load_raw_data(filepath: str | Path) -> pd.DataFrame:
+def load_raw_data(filepath: Union[str, Path]) -> pd.DataFrame:
     """Load raw long-format World Bank indicator data."""
     filepath = Path(filepath)
     if not filepath.exists():
@@ -63,16 +63,13 @@ def pivot_to_wide_format(data: pd.DataFrame) -> pd.DataFrame:
     if missing:
         raise ValueError(f"Missing required columns: {sorted(missing)}")
 
-    return (
-        data.pivot_table(
-            index=["country", "country_code", "year"],
-            columns="indicator",
-            values="value",
-            aggfunc="first",
-        )
-        .reset_index()
-        .rename_axis(columns=None)
-    )
+    wide_data = data.pivot_table(
+        index=["country", "country_code", "year"],
+        columns="indicator",
+        values="value",
+        aggfunc="first",
+    ).reset_index()
+    return wide_data.rename_axis(columns=None)
 
 
 def create_binary_target(data: pd.DataFrame, target_col: str = TARGET_COLUMN) -> pd.DataFrame:
@@ -86,7 +83,7 @@ def create_binary_target(data: pd.DataFrame, target_col: str = TARGET_COLUMN) ->
     return output
 
 
-def select_features(data: pd.DataFrame, feature_list: list[str]) -> pd.DataFrame:
+def select_features(data: pd.DataFrame, feature_list: List[str]) -> pd.DataFrame:
     """Select metadata, target, and configured modeling features."""
     selected_columns = METADATA_COLUMNS + feature_list
     missing = [column for column in selected_columns if column not in data.columns]
